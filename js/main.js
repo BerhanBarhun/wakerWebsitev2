@@ -25,6 +25,23 @@ $(window).on("scroll",function(){
       }
   }
 });
+$('.team-carousel').owlCarousel({
+  loop:true,
+  margin:0,
+  autoplay:true,
+  responsiveClass:true,
+  responsive:{
+    0:{
+        items:1,
+    },
+    600:{
+        items:1,
+    },
+    1000:{
+        items:3,
+    }
+}
+});
 /* Games swiper
 
 var swiper = new Swiper(".image-slider", {

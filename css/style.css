@@ -171,7 +171,7 @@ ul {
 }
 
 .owl-carousel button.owl-dot.active {
-  background-color: #f7f7f7;
+  background-color: var(--main-color);
 }
 
 /**Navbar**/
@@ -306,16 +306,14 @@ ul {
 .features .feature-item {
   box-shadow: var(--shadow-black-100);
   background-color: #f7f7f7;
-  margin: 15px;
   padding: 30px;
   border-radius: 10px;
   text-align: center;
   position: relative;
   z-index: 1;
   overflow: hidden;
-  height: 270px;
+  height: 350px;
 }
-
 .features .feature-item::before,
 .features .feature-item::after {
   content: "";
@@ -854,7 +852,7 @@ select {
 .team-item img {
   height: 63px;
   width: 63px;
-  margin: 0;
+  padding: 0 25px 0 0;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -862,15 +860,13 @@ select {
   border-radius: 50%;
 }
 .team-item {
-  box-shadow: var(--shadow-black-400);
-  padding: 20px 50px 50px 50px;
-  padding-bottom: 10px;
+  margin: 15px;
+  padding: 20px 50px 10px 50px;
   border-radius: 5px;
   position: block;
   z-index: 1;
   overflow: hidden;
   box-shadow: var(--shadow-black-100);
-  margin-top: 20px;
 }
 
 .team-item h3 {
@@ -971,6 +967,18 @@ select {
   .home-text h1 {
     font-size: 40px;
   }
+  .feature-item {
+    margin-top: 15px;
+  }
+}
+/*about*/
+.about {
+  padding-bottom: 0 !important;
+}
+.about-text {
+  color: var(--black-400);
+  box-shadow: var(--shadow-black-200);
+  padding: 50px 50px 35px 50px;
 }
 
 @media (max-width: 764px) {
